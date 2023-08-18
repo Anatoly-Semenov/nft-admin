@@ -7,7 +7,7 @@ import {
 	GameService,
 	JobsService,
 	RewardsService
-} from "@sk-requests"
+} from "@nft-requests"
 
 // Types
 import type { Plugin } from "@nuxt/types"
