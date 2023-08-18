@@ -1,0 +1,59 @@
+version: "3"
+services:
+  nft-ui-admin-prod:
+    container_name: nft-ui-admin-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - nft-network
+    environment:
+      NUXT_HOST:
+      NUXT_PORT:
+      BASE_API_URL:
+      ACHIEVEMENT_CONTRACT_ADDRESS:
+      NETWORK_VERSION:
+      WEB3_PROVIDER:
+      WEB3_PROVIDER_SOCKET:
+    ports:
+      - 3003:3003
+
+  nft-ui-admin-stg:
+    container_name: nft-ui-admin-stg
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - nft-network
+    environment:
+      NUXT_HOST:
+      NUXT_PORT:
+      BASE_API_URL:
+      ACHIEVEMENT_CONTRACT_ADDRESS:
+      NETWORK_VERSION:
+      WEB3_PROVIDER:
+      WEB3_PROVIDER_SOCKET:
+    ports:
+      - 3003:3003
+
+  nft-ui-admin:
+    container_name: nft-ui-admin
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - nft-network
+    environment:
+      NUXT_HOST:
+      NUXT_PORT:
+      BASE_API_URL:
+      ACHIEVEMENT_CONTRACT_ADDRESS:
+      NETWORK_VERSION:
+      WEB3_PROVIDER:
+      WEB3_PROVIDER_SOCKET:
+    ports:
+      - 3003:3003
+
+networks:
+  nft-network:
+    external: true
