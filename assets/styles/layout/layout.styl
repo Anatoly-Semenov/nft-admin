@@ -1,0 +1,56 @@
+.layout
+	min-height 100vh
+
+	&__trigger
+		font-size 18px
+		line-height 64px
+		padding 0 $padding
+		cursor pointer
+		transition color 0.3s
+
+		&:hover
+			color #1890ff
+
+	&__logo
+		flex-center()
+		width 100%
+		padding $padding
+
+		& img
+			width 80%
+
+	&__header
+		display flex
+		justify-content space-between
+		align-items center
+		width 100%
+		background-color #FFFFFF
+		padding $padding
+
+		&-intro
+			display flex
+			justify-content flex-start
+			align-items center
+			padding-top 8px
+
+		&-title
+			font-size 24px
+			font-weight 600
+			color #333333
+			margin-top -4px
+
+	&__content
+		margin 24px 16px
+		padding 24px
+		background #fff
+		min-height 280px
+
+	& .ant-layout-sider-children, & .ant-layout-sider-children ul
+		background-color $color-background
+
+		& .ant-menu.ant-menu-dark .ant-menu-item-selected
+			background-color $color-ui
+
+			& i, & span
+				color $color-background !important
+

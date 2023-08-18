@@ -1,0 +1,15 @@
+.index
+	width 100%
+	display flex
+	flex-direction column
+
+	&__card
+		cursor pointer
+
+		& img
+			width 100%
+			transition opacity $transition
+
+		&:hover
+			& img
+				opacity .7
