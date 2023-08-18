@@ -1679,11 +1679,11 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@sk-requests@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/api-requests.git#main":
+"@nft-requests@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/api-requests.git#main":
   version "0.1.0"
   resolved "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/api-requests.git#24f7e2e930848448beae200e83a6c17fc5095bac"
 
-"@sk-types@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#main":
+"@nft-types@git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#main":
   version "0.1.0"
   resolved "git+https://anatoly_skill_guilds:glpat-LFGzwQF_v3gL42vU6nf5@gitlab.com/skillguilds_repo/types.git#b4427563e543fb4b78c17b9e612ec755e7d15e80"
 
