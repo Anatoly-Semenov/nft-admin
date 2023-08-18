@@ -1,0 +1,27 @@
+.docs__detail
+	width 100%
+	display flex
+	flex-direction column
+
+	&-title
+		font-size 30px
+		color black
+
+	&-component
+		width 800px
+		margin-top 20px
+
+		& > *:not(:first-child)
+			margin-left 20px
+
+		&._dark
+			background-color $color-background
+			border-radius $border-radius-big
+			padding 20px
+
+	&-code
+		margin-top 20px
+		width 600px
+
+	& .ant-table-wrapper
+		margin-top 50px

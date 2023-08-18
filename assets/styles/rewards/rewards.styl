@@ -1,0 +1,78 @@
+.rewards-table
+	display flex
+	flex-direction column
+	justify-content flex-start
+	align-items flex-start
+
+	& .ui-input
+		width 300px
+
+	&__actions
+		display flex
+		grip-gap $padding-small
+		gap $padding-small
+
+	&__search
+		margin-top $padding-big
+
+	&__title
+		display flex
+		justify-content flex-start
+		align-items center
+		margin-left -16px
+
+		& svg
+			margin-right 8px
+
+	&__item
+		display flex
+		justify-content flex-start
+		align-items center
+
+	&__info
+		margin-left 8px
+
+
+	&__name
+		font-size 14px
+		font-weight 600
+		margin-top 8px
+
+	&__link
+		display flex
+		align-items center
+		font-size 14px
+		color $color-link
+
+		& .anticon
+			margin-left 3px
+
+		& path
+			fill $color-link
+
+	& .ui-table
+		& *
+			font-size 16px
+
+	& .ui-table._loading &__name, & .ui-table._loading &__link, & .ui-table._loading &__marketplace, & .ui-table._loading p:not(&__param, &__param-description), & .ui-table._loading .ui-avatar
+		loading()
+		height 22px
+		width 60px
+
+	& .ui-table._loading &__name
+		height 25px
+		width 140px
+
+	& .ui-table._loading &__link
+		height 18px
+		width 84px
+		margin-top 4px
+		color transparent
+
+	& .ui-table._loading .ui-avatar
+		border-radius $border-radius-circle
+		height 50px
+		width 50px
+
+	& .ui-table._loading._loading &__link path, & .ui-table._loading &__marketplace path
+		fill transparent

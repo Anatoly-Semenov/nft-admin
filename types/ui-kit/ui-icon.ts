@@ -1,0 +1,35 @@
+export namespace UiIcon {
+	export type Name =
+		| "alert"
+		| "arrow-up-right"
+		| "arrows-top"
+		| "copy"
+		| "crown"
+		| "cup"
+		| "dashboard"
+		| "error"
+		| "error-info"
+		| "fire"
+		| "game"
+		| "home"
+		| "info"
+		| "info-circle"
+		| "lightning"
+		| "matic"
+		| "more"
+		| "pen"
+		| "phantom"
+		| "power"
+		| "share"
+		| "skg"
+		| "success"
+		| "table"
+		| "timer"
+		| "user"
+		| "wallet"
+		| "website"
+
+	export type Size = "s" | "m" | "l" | number
+
+	export type Theme = "filled" | "outlined" | "twoTone"
+}
